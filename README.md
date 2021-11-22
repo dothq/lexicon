@@ -3,7 +3,7 @@
 
 ---
 
-This service starts a local API used for neural machine translation.
+This service starts a local webserver used for neural machine translation.
 
 
 ## 🚀 Awesome Attributes
