@@ -6,7 +6,7 @@
 This service starts a local webserver used for neural machine translation.
 
 
-## 🚀 Awesome Attributes
+## 🚀 Features
 
 |  | Dot Translate |
 | - | ------------ |
