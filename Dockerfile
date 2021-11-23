@@ -10,4 +10,5 @@ RUN pip3 install torch==1.4.0+cpu -f https://download.pytorch.org/whl/cpu/torch_
 RUN pip3 install argostranslate
 RUN pip3 install -r requirements.txt
 
+EXPOSE 3000
 ENTRYPOINT ["python3", "./src/application.py"]
