@@ -5,6 +5,7 @@ from os import path
 print("Updating Argos translation model database...")
 subprocess.check_call("argospm update", shell=True)
 
+subprocess.check_call("argospm list", shell=True)
 models = subprocess.getoutput("argospm list").split("\n")
 
 x = 0
