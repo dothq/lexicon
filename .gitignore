@@ -130,3 +130,6 @@ dmypy.json
 
 # AI models
 models
+
+# Databases
+*.db
