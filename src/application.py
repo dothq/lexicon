@@ -18,12 +18,20 @@ for model in models:
 installed_languages = translate.get_installed_languages()
 names = [str(lang) for lang in installed_languages]
 
-@app.route("/<fr>/<to>")
-def translate(fr, to):
-    input = request.args.get("input")
+@app.route("/translate", methods = ["POST"])
+def translate():
+    if "from" not in request.json:
+        return "Missing \"from\" body parameter.", 400, { "content-type": "text/plain" }
 
-    if input == None:
-        return "Missing \"input\" query parameter.", 400, { "content-type": "text/plain" }
+    if "to" not in request.json:
+        return "Missing \"to\" body parameter.", 400, { "content-type": "text/plain" }
+
+    if "input" not in request.json:
+        return "Missing \"input\" body parameter.", 400, { "content-type": "text/plain" }
+
+    fr = request.json["from"]
+    to = request.json["to"]
+    input = request.json["input"]
 
     if fr == to:
         return input, 200, { "content-type": "text/plain" }
@@ -53,7 +61,7 @@ def server_error(e):
     return "Internal Server Error", 500, { "content-type": "text/plain" }
 
 def main():
-    host = getenv("TRANSLATE_HOST", default="127.0.0.1")
+    host = getenv("TRANSLATE_HOST", default="0.0.0.0")
     port = getenv("TRANSLATE_PORT", default=3000)
 
     app.run(host=host, port=port)
