@@ -1,2 +1,1 @@
-argostranslate == 1.5.3
 Flask == 2.0.2
