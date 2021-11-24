@@ -6,7 +6,7 @@ WORKDIR /app
 COPY ./ ./
 
 RUN apt-get update -y
-RUN apt-get install python3-dev libglib2.0-0 libsm6 libxrender1 libxext6 -y
+RUN apt-get install git python3-dev libglib2.0-0 libsm6 libxrender1 libxext6 -y
 
 RUN pip3 install torch==1.4.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
 RUN pip3 install git+https://github.com/johnpaulbin/argos-translate.git
