@@ -28,8 +28,10 @@ git clone https://github.com/dothq/translate.git
 cd translate/
 ```
 Then build our DockerFile with `docker build -t translate .`
-And run the container with `docker run -d -p 3000:3000 translate`
-**Or, if you are not using docker:**
+
+Run the container with `docker run -d -p 3000:3000 translate`
+
+### **If you do not want to go with the docker approch:**
 
 Install required dependencies:
 ```bash
@@ -47,7 +49,7 @@ Launch the server:
 python3 application.py
 ```
 
-The API is available for use via POST to `/translate` using JSON:
+The API is available for use via POST to `/translate` (port 3000) using JSON:
 <br>
 Header: `Authorization: Bearer TOKEN` (a DB will be created under `translate` after the server is launched)
 ```
