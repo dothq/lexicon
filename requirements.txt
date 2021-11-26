@@ -1,2 +1,3 @@
-Flask == 2.0.2
+Flask==2.0.2
 git+https://github.com/johnpaulbin/argos-translate.git@master#egg=argostranslate
+torch==1.4.0+cpu
