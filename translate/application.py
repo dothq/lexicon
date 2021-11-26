@@ -60,8 +60,8 @@ def translate():
         if fr == to:
             return input, 200, { "content-type": "text/plain" }
 
-        source = fr.lower().replace(fr, languages.all[fr])
-        target = to.lower().replace(to, languages.all[to])
+        source = fr.replace(fr, languages.all[fr])
+        target = to.replace(to, languages.all[to])
         
         if source not in names:
             return f"Language with code \"{fr}\" was not found.", 404, { "content-type": "text/plain" }
