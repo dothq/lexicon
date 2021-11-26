@@ -1,0 +1,550 @@
+[
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "ar",
+        "from_name": "Arabic",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-ar_en-1_0.argosmodel",
+            "ipfs://QmV5bmf8iqKpoGoyuTzEppaSWdceuW6zgiePaUr5ThPCpW"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "zh",
+        "from_name": "Chinese",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-zh_en-1_1.argosmodel",
+            "ipfs://QmSDRRbcDWjL5ZRsNYhHmtTAMmRVsKgSEKxUuju5ytLT4e"
+        ]
+    },
+    {
+        "package_version": "1.4",
+        "argos_version": "1.4",
+        "from_code": "nl",
+        "from_name": "Dutch",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-nl_en-1_4.argosmodel",
+            "ipfs://Qmd343XFXGJDpsWQ2G1s4v1hjbzJwUHnm8y3qEVNht6FSk"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "ar",
+        "to_name": "Arabic",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_ar-1_0.argosmodel",
+            "ipfs://QmV5bmf8iqKpoGoyuTzEppaSWdceuW6zgiePaUr5ThPCpW"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "zh",
+        "to_name": "Chinese",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_zh-1_1.argosmodel",
+            "ifps://QmcxzJqZCjTYVmHyoMZdNsEyWaDuBo4VpLg8y8za7u466o"
+        ]
+    },
+    {
+        "package_version": "1.4",
+        "argos_version": "1.4",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "nl",
+        "to_name": "Dutch",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_nl-1_4.argosmodel",
+            "ifps://QmQtHHpnxVSAKRGgdEbHisNMSCeJN8Dv7DwqwzYTcnXM3s"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "fi",
+        "to_name": "Finnish",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_fi-1_5.argosmodel",
+            "ifps://QmRDSD2FXE8Nxf9UEuRcNAzQ4azEWiGAHgZv3jWvXau6Y5"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "fr",
+        "to_name": "French",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_fr-1_0.argosmodel",
+            "ipfs://QmTFDhZVeqDqXQk6DDt6wp9xA4L4yed7zup122Hh8cQtkk"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "de",
+        "to_name": "German",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_de-1_5.argosmodel",
+            "ipfs://QmSqnuR9TYjbxebCZrKU8Rcr3Vhx1okFJHCwbeUGUgUULh"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "hi",
+        "to_name": "Hindi",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_hi-1_1.argosmodel",
+            "ipfs://QmUwZ5mSRLycPPw6CRqVVqXBMrtEN8Az9UiXH7eTuzMh8n"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "hu",
+        "to_name": "Hungarian",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_hu-1_5.argosmodel",
+            "ipfs://QmZQTGaxRviadGfvixsSjKuhFpD13hjUMN2D3wAKrcctmK"
+        ]
+    },
+    {
+        "package_version": "1.2",
+        "argos_version": "1.2",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "id",
+        "to_name": "Indonesian",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_id-1_2.argosmodel",
+            "ipfs://QmRgVwNeuX8wBtwih8Ef1R6Frg8jQv8tVTBJf3rfH2PGn5"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "ga",
+        "to_name": "Irish",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_ga-1_1.argosmodel",
+            "ipfs://Qmb35iKrxS3pJPeTk3xYJuLEDfDXRBehbFNvDiRMnjQGJj"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "it",
+        "to_name": "Italian",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_it-1_0.argosmodel",
+            "ipfs://QmT5LnsNZEf3JKYMoYWvo9aNMwKUyLLUpshCA7hZLQRST4"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "ja",
+        "to_name": "Japanese",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_ja-1_1.argosmodel",
+            "ipfs://QmQjHs8ZhCU6WTV9RRHQMXgy4cDwyjvLUZ4bBp6J9GMCRb"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "ko",
+        "to_name": "Korean",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_ko-1_1.argosmodel",
+            "ipfs://QmWecr5i4tJNnokusm97rTUyQtUqNNPufGF7ake1hJVu6G"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "pl",
+        "to_name": "Polish",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_pl-1_1.argosmodel",
+            "ipfs://QmZiUXYKqWtWp11ZVuCxyZzyBoRKduzdZge4Wr4D5bh7We"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "pt",
+        "to_name": "Portuguese",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_pt-1_0.argosmodel",
+            "ifps://Qmb6Net4NwQeYf6Q9uCzT1QbA3TZcD7hwXmP89yjVBt6yh"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "ru",
+        "to_name": "Russian",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_ru-1_1.argosmodel",
+            "ipfs://QmcxzJqZCjTYVmHyoMZdNsEyWaDuBo4VpLg8y8za7u466o"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "es",
+        "to_name": "Spanish",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_es-1_0.argosmodel",
+            "ipfs://QmTej992FdB95GyaYjmcZPoxyEqctCvc7mizUeLgyT6dcb"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "sv",
+        "to_name": "Swedish",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_sv-1_5.argosmodel",
+            "ipfs://QmXjLByK6hv3BQmPz1XMAEPLJEBmofYc7uN8AdDobQADZD"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "tr",
+        "to_name": "Turkish",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_tr-1_1.argosmodel",
+            "ipfs://QmUUTSFEKjxFj3V7h3ttAsu548kQoTeXcjGsuwGbZexkab"
+        ]
+    },
+    {
+        "package_version": "1.4",
+        "argos_version": "1.4",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "uk",
+        "to_name": "Ukranian",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_uk-1_4.argosmodel",
+            "ipfs://QmbXofcXVEPX4kY8WcqHt7WzGACudXKf7VXYsFjDBy1wTs"
+        ]
+    },
+    {
+        "package_version": "1.2",
+        "argos_version": "1.2",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "vi",
+        "to_name": "Vietnamese",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_vi-1_2.argosmodel",
+            "ipfs://Qmf4vN67LL3xpDZSGgNDMsindzvYhi5tx5eKLyNMD2ubd2"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "fi",
+        "from_name": "Finnish",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-fi_en-1_5.argosmodel",
+            "ipfs://QmWaSo6N5kXgojkziQCJH1eVSy3wcPusiykLgvAoqS4V9y"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "fr",
+        "from_name": "French",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-fr_en-1_0.argosmodel",
+            "ipfs://QmRVE85p59QDGZg2CMec3yAt9FwxbZAotjh34XKrzGGVEH"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "de",
+        "from_name": "German",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-de_en-1_5.argosmodel",
+            "ipfs://QmX17pWVH1pcsBQSutv8fzB6soiBTLPkZfPvPtn3ctPebX"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "hi",
+        "from_name": "Hindi",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-hi_en-1_1.argosmodel",
+            "ipfs://QmQrvsyhYywaqgi2yXjPPoRAbudQS7LPEjBkrPJQrdDt1H"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "hu",
+        "from_name": "Hungarian",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-hu_en-1_5.argosmodel",
+            "ipfs://QmfEXxSieewThZ45jvSQXJUJaow6vZmVgyVbhNyXPbwXHr"
+        ]
+    },
+    {
+        "package_version": "1.2",
+        "argos_version": "1.2",
+        "from_code": "id",
+        "from_name": "Indonesian",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-id_en-1_2.argosmodel",
+            "ipfs://QmbxUki3VtfzuqX9AL8EzZBTC3LbqzFU1bsj46k5wKsBor"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "ga",
+        "from_name": "Irish",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-ga_en-1_1.argosmodel",
+            "ipfs://Qmbf88HufkqDk6UhYeWA5uoe7eSgp8ZYRkQqrbXJonyAdY"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "it",
+        "from_name": "Italian",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-it_en-1_0.argosmodel",
+            "ipfs://QmbFjMY6j6u4g4gfqFpATSRrwD3VB3ci2ujnGgHijQGEHG"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "ja",
+        "from_name": "Japanese",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-ja_en-1_1.argosmodel",
+            "ipfs://QmQDt5mgKgi6vBieC3uHWxZ41XB4JxtEG891os9UFUuzNU"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "ko",
+        "from_name": "Korean",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-ko_en-1_1.argosmodel",
+            "ipfs://QmagkMMHshubVk8XT3sXow5Y9vzBoz3rbN2HAAGL9vQsKY"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "pl",
+        "from_name": "Polish",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-pl_en-1_1.argosmodel",
+            "ipfs://QmZiUXYKqWtWp11ZVuCxyZzyBoRKduzdZge4Wr4D5bh7We"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "pt",
+        "from_name": "Portuguese",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-pt_en-1_0.argosmodel",
+            "ipfs://QmeTuK7ydLqz2UmBHSoxopVQg9rztnLGkNuRDw2MH5gYfL"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "ru",
+        "from_name": "Russian",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-ru_en-1_0.argosmodel",
+            "ipfs://QmTEfEov1eifNp2BkieaYzSaaKnL4L5UfG12SuS9n5XzJb"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "es",
+        "from_name": "Spanish",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-es_en-1_0.argosmodel",
+            "ipfs://Qmcs4RKWoYh9bhkv4fWovnnJ2eQfox52GioYtjyPP3vYSB"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "sv",
+        "from_name": "Swedish",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-sv_en-1_5.argosmodel",
+            "ipfs://QmTusbmKWwVGRkMABcBFNrNrYoAwTzvuUEaqLhzYr5yH36"
+        ]
+    },
+    {
+        "package_version": "1.1",
+        "argos_version": "1.1",
+        "from_code": "tr",
+        "from_name": "Turkish",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-tr_en-1_1.argosmodel",
+            "ipfs://QmcMrkJkKKQ5wP8ua64B7r9cyYho7qdRvGacbaGfNFpaL5"
+        ]
+    },
+    {
+        "package_version": "1.4",
+        "argos_version": "1.4",
+        "from_code": "uk",
+        "from_name": "Ukranian",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-uk_en-1_4.argosmodel",
+            "ipfs://QmX4DNcxd1E6uVnD6qyZ1TwVq7569VkJbP6G3kxownM2qx"
+        ]
+    },
+    {
+        "package_version": "1.2",
+        "argos_version": "1.2",
+        "from_code": "vi",
+        "from_name": "Vietnamese",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-vi_en-1_2.argosmodel",
+            "ipfs://QmZeGUMuEg8qheWeci3dFx9EQSZ3ntn9THCZ1qsDt9Nkfp"
+        ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "cy",
+        "to_name": "Welsh",
+        "links": [
+            "https://github.com/dothq/translate/releases/download/November-2021/en_cy.argosmodel"
+         ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "cy",
+        "from_name": "Welsh",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://github.com/dothq/translate/releases/download/November-2021/cy_en.argosmodel"
+         ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "nl",
+        "to_name": "Dutch",
+        "links": [
+            "https://github.com/dothq/translate/releases/download/November-2021/en_nl.argosmodel"
+         ]
+    },
+    {
+        "package_version": "1.5",
+        "argos_version": "1.5",
+        "from_code": "en",
+        "from_name": "Dutch",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://github.com/dothq/translate/releases/download/November-2021/nl_en.argosmodel"
+         ]
+    }
+]
