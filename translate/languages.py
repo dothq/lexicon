@@ -1,3 +1,8 @@
+"""
+This file allows us to map ISO codes to their proper language names for application.py
+Example: en -> English
+"""
+
 all = {
     "af": "Afrikaans",
     "sq": "Albanian",
