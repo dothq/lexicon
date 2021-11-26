@@ -12,5 +12,4 @@ RUN pip3 install torch==1.4.0+cpu -f https://download.pytorch.org/whl/cpu/torch_
 RUN pip3 install git+https://github.com/johnpaulbin/argos-translate.git
 RUN pip3 install -r requirements.txt
 
-CMD ["python3", "./translate/setup.py"]
 CMD ["python3", "./translate/application.py"]
