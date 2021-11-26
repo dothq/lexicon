@@ -524,27 +524,5 @@
         "links": [
             "https://github.com/dothq/translate/releases/download/November-2021/cy_en.argosmodel"
          ]
-    },
-    {
-        "package_version": "1.5",
-        "argos_version": "1.5",
-        "from_code": "en",
-        "from_name": "English",
-        "to_code": "nl",
-        "to_name": "Dutch",
-        "links": [
-            "https://github.com/dothq/translate/releases/download/November-2021/en_nl.argosmodel"
-         ]
-    },
-    {
-        "package_version": "1.5",
-        "argos_version": "1.5",
-        "from_code": "en",
-        "from_name": "Dutch",
-        "to_code": "en",
-        "to_name": "English",
-        "links": [
-            "https://github.com/dothq/translate/releases/download/November-2021/nl_en.argosmodel"
-         ]
     }
 ]
