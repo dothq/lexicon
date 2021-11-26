@@ -15,10 +15,12 @@ conn = sqlite3.connect("state.db")
 
 conn.execute("CREATE TABLE IF NOT EXISTS keys (id TEXT, name TEXT)")
 
-models = listdir("./models")
+MODELS_PATH = "./models/downloaded/"
+models = listdir(MODELS_PATH)
 
 for model in models:
-    package.install_from_path(f"./models/{model}")
+    if model.endswith(".argosmodel"):
+        package.install_from_path(MODELS_PATH + model)
 
 installed_languages = translate.get_installed_languages()
 names = [str(lang) for lang in installed_languages]
