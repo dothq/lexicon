@@ -18,6 +18,45 @@ This service starts a local webserver used for neural machine translation.
 
 For inference, all models are ran on the CPU. Every model utilized in this service are 8-bit quantized, which results in decreased latency and storage costs.
 
+## 📦️ Setup
+
+Note before starting: after all of our models download, it will take up about 5GB on disk.
+
+Download the repository to disk:
+```
+git clone https://github.com/dothq/translate.git
+cd translate/
+```
+Then run our DockerFile, **or:**
+
+Install required dependencies:
+```bash
+pip3 install -r requirements.txt
+cd translate/
+```
+
+Download all the available models:
+```bash
+python3 setup.py
+```
+
+Launch the server:
+```bash
+python3 application.py
+```
+
+The API is available for use via POST to `/translate` using JSON:
+<br>
+Header: `Authorization: Bearer TOKEN` (a DB will be created under `translate` after the server is launched)
+```
+{
+  "from": "en",
+  "to": "es",
+  "input": "This is a test translation using Dot Translate!"
+}
+```
+Response will be in plain text.
+
 ## 🔧 Contributing
 
 We accept all positive contributions that affects this repository and service as a whole; we accept trained .argosmodels files via pull request. 
