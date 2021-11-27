@@ -16,7 +16,7 @@ conn = sqlite3.connect("state.db")
 
 conn.execute("CREATE TABLE IF NOT EXISTS keys (id TEXT, name TEXT)")
 
-MODELS_PATH = os.path.join(dirname, "models/downloaded/")
+MODELS_PATH = os.path.join(os.path.dirname(__file__), "models/downloaded/")
 models = listdir(MODELS_PATH)
 
 for model in models:
