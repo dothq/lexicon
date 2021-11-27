@@ -32,11 +32,7 @@ Then build our Dockerfile with `sudo docker build -t translate .`
 
 Run the container with `sudo docker run -d -p 3000:3000 translate`
 
-**Note:** if you want to add a auth key inside the docker container, interact with the container with bash via:
-```
-sudo docker exec -it <image> /bin/bash
-```
-Then run: `python3 ./translate/db.py add_key [value]` and restart the flask server.
+**Note:** The authorization key is `universal` to modify, edit Dockerfile locally and rebuild.
 
 ### **Continue without docker:**
 
