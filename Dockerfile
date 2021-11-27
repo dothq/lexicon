@@ -11,4 +11,5 @@ RUN apt-get install git python3-dev libglib2.0-0 libsm6 libxrender1 libxext6 -y
 RUN pip3 install -r requirements.txt
 
 CMD ["python3", "./translate/models.py", "download_models"]
+CMD ["python3", "./translate/db.py", "add_key", "universal"]
 CMD ["python3", "./translate/application.py"]
