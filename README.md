@@ -34,8 +34,7 @@ Run the container with `sudo docker run -d -p 3000:3000 translate`
 
 **Note:** if you want to add a auth key inside the docker container, interact with the container with bash via:
 ```
-# Assuming an Ubuntu Docker image
-docker run -it <image> /bin/bash
+sudo docker exec -it <image> /bin/bash
 ```
 Then run: `python3 ./translate/db.py add_key [value]` and restart the flask server.
 
