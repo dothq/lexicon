@@ -1,0 +1,26 @@
+[
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "es",
+        "to_name": "Spanish",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-en_es-1_0.argosmodel",
+            "ipfs://QmTej992FdB95GyaYjmcZPoxyEqctCvc7mizUeLgyT6dcb"
+        ]
+    },
+    {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "es",
+        "from_name": "Spanish",
+        "to_code": "en",
+        "to_name": "English",
+        "links": [
+            "https://argosopentech.nyc3.digitaloceanspaces.com/argospm/translate-es_en-1_0.argosmodel",
+            "ipfs://Qmcs4RKWoYh9bhkv4fWovnnJ2eQfox52GioYtjyPP3vYSB"
+        ]
+    }
+]
