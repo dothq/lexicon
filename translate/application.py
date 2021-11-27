@@ -23,6 +23,7 @@ models = listdir(MODELS_PATH)
 
 for model in models:
     if model.endswith(".argosmodel"):
+        print(f"Loading {model}")
         package.install_from_path(MODELS_PATH + model)
 
 installed_languages = translate.get_installed_languages()
@@ -38,7 +39,7 @@ def translate():
     if auth_token == None or len(auth_token) <= 0:
         return "Invalid API key.", 403, { "content-type": "text/plain" }
 
-    with sqlite3.connect("state.db") as con:
+    with sqlite3.connect(DB_PATH) as con:
         cur = con.cursor()
 
         keys = cur.execute("SELECT * FROM keys WHERE id = ?", (auth_token,))
