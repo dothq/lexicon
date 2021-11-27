@@ -85,6 +85,10 @@ def not_found(e):
 def server_error(e):
     return "Internal Server Error", 500, { "content-type": "text/plain" }
 
+@app.route("/")
+def index():
+    return str(names), 200, { "content-type": "text/plain" }
+
 def main():
     host = getenv("TRANSLATE_HOST", default="0.0.0.0")
     port = getenv("TRANSLATE_PORT", default=3000)
