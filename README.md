@@ -27,11 +27,12 @@ Download the repository to disk:
 git clone https://github.com/dothq/translate.git
 cd translate/
 ```
-Then build our DockerFile with `docker build -t translate .`
 
-Run the container with `docker run -d -p 3000:3000 translate`
+Then build our Dockerfile with `sudo docker build -t translate .`
 
-### **If you do not want to go with the docker approch:**
+Run the container with `sudo docker run -d -p 3000:3000 translate`
+
+### **Continue without docker:**
 
 Install required dependencies:
 ```bash
