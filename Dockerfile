@@ -2,7 +2,7 @@ FROM amd64/python:3.6-slim-buster
 
 LABEL maintainer="Dot HQ <contact@dothq.co>"
 
-WORKDIR /app
+WORKDIR /usr/local/bin
 COPY ./ ./
 
 RUN apt-get update -y
