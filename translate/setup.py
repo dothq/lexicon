@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import subprocess
 from shutil import copyfile
 from os import path
