@@ -20,7 +20,9 @@ For inference, all models are ran on the CPU. Every model utilized in this servi
 
 ## 📦️ Setup
 
-Note before starting: after all of our models download, it will take up about 5GB on disk.
+**Note**: after setup.py is executed, 5GB will be used.
+
+**Docker** will take ~16GB in total.
 
 Download the repository to disk:
 ```
@@ -32,7 +34,7 @@ Then build our Dockerfile with `sudo docker build -t translate .`
 
 Run the container with `sudo docker run -d -p 3000:3000 translate`
 
-**Note:** The authorization key is `universal`
+The default authorization key is `universal`
 
 ### **Continue without docker:**
 
@@ -54,7 +56,7 @@ python3 application.py
 
 The API is available for use via POST to `/translate` (port 3000) using JSON:
 <br>
-Header: `Authorization: Bearer TOKEN` (a DB will be created under `translate` after the server is launched)
+Header: `Authorization: Bearer TOKEN`
 ```
 {
   "from": "en",
