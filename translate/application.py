@@ -12,7 +12,9 @@ import os
 import languages
 
 app = Flask(__name__)
-conn = sqlite3.connect("state.db")
+DB_NAME = "state.db"
+DB_PATH = os.path.join(os.path.dirname(__file__), DB_NAME)
+conn = sqlite3.connect(DB_PATH)
 
 conn.execute("CREATE TABLE IF NOT EXISTS keys (id TEXT, name TEXT)")
 
