@@ -7,6 +7,7 @@ from argostranslate import package, translate
 
 from os import getenv
 from os import listdir
+import os
 
 import languages
 
@@ -15,7 +16,7 @@ conn = sqlite3.connect("state.db")
 
 conn.execute("CREATE TABLE IF NOT EXISTS keys (id TEXT, name TEXT)")
 
-MODELS_PATH = "./models/downloaded/"
+MODELS_PATH = os.path.join(dirname, "models/downloaded/")
 models = listdir(MODELS_PATH)
 
 for model in models:
