@@ -18,7 +18,8 @@ def download_available_models():
   for model in data:
     print(f"Downloading {model['from_name']} -> {model['to_name']}")
     MODEL_LINK = model['links'][0]
-    with open(f"models/downloaded/{MODEL_LINK.split('/')[-1]}", "wb") as f:
+    MODEL_DOWNLOAD_PATH = os.path.join(dirname, f"models/downloaded/")
+    with open(f"{MODEL_DOWNLOAD_PATH}/{MODEL_LINK.split('/')[-1]}", "wb") as f:
       f.write(urllib.request.urlopen(MODEL_LINK).read())
 
 if __name__ == "__main__":
