@@ -32,7 +32,7 @@ Then build our Dockerfile with `sudo docker build -t translate .`
 
 Run the container with `sudo docker run -d -p 3000:3000 translate`
 
-**Note:** The authorization key is `universal` to modify, edit Dockerfile locally and rebuild.
+**Note:** The authorization key is `universal`
 
 ### **Continue without docker:**
 
