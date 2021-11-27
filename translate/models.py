@@ -1,9 +1,13 @@
 import json
 import urllib.request
 import argparse
+import os
 
 MODEL_JSON = "latest.json"
-data = json.load(open(f"models/{MODEL_JSON}"))
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, f"models/{MODEL_JSON}")
+
+data = json.load(open(filename))
 
 def print_available_models():
   for model in data:
