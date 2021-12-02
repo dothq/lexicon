@@ -63,7 +63,7 @@ Header: `Authorization: Bearer TOKEN` (default key `universal`)
   "input": "This is a test translation using Dot Translate!"
 }
 ```
-Response will be in plain text.
+Response will be in JSON.
 
 **Adding a auth token to DB:**
 
