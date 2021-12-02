@@ -1,15 +1,10 @@
-from flask import Flask
-from flask import request
-
+from flask import Flask, jsonify, request
 import sqlite3
-
 from argostranslate import package, translate
-
-from os import getenv
-from os import listdir
+from os import getenv, listdir
 import os
-
 import languages
+
 
 app = Flask(__name__)
 DB_NAME = "state.db"
@@ -78,7 +73,13 @@ def translate():
 
         translation = target_language.translate(input)
         
-        return translation, 200, { "content-type": "text/plain" }
+        response = jsonify(
+            translation = translation,
+            source = fr,
+            to = to
+        )
+        
+        return response, 200, { "content-type": "application/json" }
 
 @app.errorhandler(404)
 def not_found(e):
