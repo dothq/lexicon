@@ -1,17 +1,13 @@
 from flask import Flask, jsonify, request
+from flask_docs import ApiDoc
+
 import sqlite3
 from argostranslate import package, translate
 from os import getenv, listdir
 import os
 import languages
 
-
 app = Flask(__name__)
-DB_NAME = "state.db"
-DB_PATH = os.path.join(os.path.dirname(__file__), DB_NAME)
-conn = sqlite3.connect(DB_PATH)
-
-conn.execute("CREATE TABLE IF NOT EXISTS keys (id TEXT, name TEXT)")
 
 MODELS_PATH = os.path.join(os.path.dirname(__file__), "models/downloaded/")
 models = listdir(MODELS_PATH)
@@ -39,8 +35,38 @@ def send_translation_response(translation, fr, to):
 
     return jsonify(data), 200, { "content-type": "application/json" }
 
-@app.route("/translate", methods = ["POST"])
+TRANSLATE_HELP_MESSAGE = """Translate
+
+### Methods
+GET, POST
+
+### Structure
+| Name  | Nullable? | Location | Type | Notes              |
+|-------|-----------|----------|------|--------------------|
+| from  | false     | body     | str  | Source Language    |
+| to    | false     | body     | str  | Target Language    |
+| input | false     | body     | str  | Input to Translate |
+
+### Request
+{
+    "from": "en",
+    "to": "es",
+    "input": "Hello"
+}
+
+### Response
+{
+    "from": "en",
+    "to": "es",
+    "translation": "Hola."
+}
+"""
+
+@app.route("/translate", methods = ["GET", "POST"])
 def translate():
+    if request.method == "GET":
+        return TRANSLATE_HELP_MESSAGE, 200, { "content-type": "text/plain" }
+
     fr = request.json["from"]
     to = request.json["to"]
     input = request.json["input"]
