@@ -66,11 +66,15 @@ def translate():
 
 @app.errorhandler(404)
 def not_found(e):
-    return "Not Found", 404, { "content-type": "text/plain" }
+    return throw_error(404, "Not Found")
+
+@app.errorhandler(405)
+def server_error(e):
+    return throw_error(405, "Method Not Allowed")
 
 @app.errorhandler(500)
 def server_error(e):
-    return "Internal Server Error", 500, { "content-type": "text/plain" }
+    return throw_error(500, "Internal Server Error")
 
 @app.route("/")
 def index():
