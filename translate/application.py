@@ -24,62 +24,45 @@ for model in models:
 installed_languages = translate.get_installed_languages()
 names = [str(lang) for lang in installed_languages]
 
+def throw_error(code, message):
+    return jsonify(
+        ok = False,
+        message = message
+    ), code, { "content-type": "application/json" }
+
+def send_translation_response(translation, fr, to):
+    data = {
+        "translation": translation,
+        "from": fr,
+        "to": to
+    }
+
+    return jsonify(data), 200, { "content-type": "application/json" }
+
 @app.route("/translate", methods = ["POST"])
 def translate():
-    auth_token = request.headers.get("authorization")
+    fr = request.json["from"]
+    to = request.json["to"]
+    input = request.json["input"]
 
-    if auth_token != None:
-        auth_token = auth_token.replace("Bearer ", "", 1)
+    if fr == to:
+        return send_translation_response(input, fr, to)
 
-    if auth_token == None or len(auth_token) <= 0:
-        return "Invalid API key.", 403, { "content-type": "text/plain" }
+    source = fr.replace(fr, languages.all[fr])
+    target = to.replace(to, languages.all[to])
+    
+    if source not in names:
+        return throw_error(404, f"Language with code \"{fr}\" was not found.")
 
-    with sqlite3.connect(DB_PATH) as con:
-        cur = con.cursor()
+    if target not in names:
+        return throw_error(404, f"Language with code \"{to}\" was not found.")
 
-        keys = cur.execute("SELECT * FROM keys WHERE id = ?", (auth_token,))
-        keys = keys.fetchall()
-        
-        if len(keys) <= 0:
-            return "Invalid API key.", 403, { "content-type": "text/plain" }
+    original_language = installed_languages[names.index(source)]
+    target_language = original_language.get_translation(installed_languages[names.index(target)])
 
-        if "from" not in request.json:
-            return "Missing \"from\" body parameter.", 400, { "content-type": "text/plain" }
-
-        if "to" not in request.json:
-            return "Missing \"to\" body parameter.", 400, { "content-type": "text/plain" }
-
-        if "input" not in request.json:
-            return "Missing \"input\" body parameter.", 400, { "content-type": "text/plain" }
-
-        fr = request.json["from"]
-        to = request.json["to"]
-        input = request.json["input"]
-
-        if fr == to:
-            return input, 200, { "content-type": "text/plain" }
-
-        source = fr.replace(fr, languages.all[fr])
-        target = to.replace(to, languages.all[to])
-        
-        if source not in names:
-            return f"Language with code \"{fr}\" was not found.", 404, { "content-type": "text/plain" }
-
-        if target not in names:
-            return f"Language with code \"{to}\" was not found.", 404, { "content-type": "text/plain" }
-
-        original_language = installed_languages[names.index(source)]
-        target_language = original_language.get_translation(installed_languages[names.index(target)])
-
-        translation = target_language.translate(input)
-        
-        response = jsonify(
-            translation = translation,
-            source = fr,
-            to = to
-        )
-        
-        return response, 200, { "content-type": "application/json" }
+    translation = target_language.translate(input)
+    
+    return send_translation_response(translation, fr, to)
 
 @app.errorhandler(404)
 def not_found(e):
