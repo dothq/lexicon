@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-from flask_docs import ApiDoc
 
 import sqlite3
 from argostranslate import package, translate
