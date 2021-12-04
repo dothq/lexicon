@@ -65,14 +65,6 @@ Header: `Authorization: Bearer TOKEN` (default key `universal`)
 ```
 Response will be in JSON.
 
-**Adding a auth token to DB:**
-
-Run:
-```
-python3 ./translate/db.py add_key [value]
-```
-Make sure to restart server to make changes take affect.
-
 ## 🔧 Contributing
 
 We accept all positive contributions that affects this repository and service as a whole; we accept trained .argosmodels files via pull request. 
