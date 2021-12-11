@@ -8,10 +8,7 @@ import os
 
 print("Downloading available translation models from index...")
 
-try:
-  # Download all models
-  download_available_models()
-  
-  print("Setup finished")
-except:
-  print("Model downloading failed.")
+# Download all models
+download_available_models()
+
+print("Setup finished")

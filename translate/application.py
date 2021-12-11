@@ -105,7 +105,7 @@ def server_error(e):
 def download_model(name):
     try:
         return send_file(
-            f"../models/{name}.argosmodel", attachment_filename=f"{name}.argosmodel"
+            f"../models/{name}.argosmodel", download_name=f"{name}.argosmodel"
         )
     except Exception as e:
         return throw_error(404, str(e))

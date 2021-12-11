@@ -2,6 +2,7 @@ import json
 import urllib.request
 import argparse
 import os
+from shutil import rmtree
 
 MODEL_JSON = "latest.json"
 dirname = os.path.dirname(__file__)
@@ -14,13 +15,24 @@ def print_available_models():
     print(f"{model['from_name']} -> {model['to_name']}")
 
 def download_available_models():
+  MODEL_DOWNLOAD_PATH = os.path.join(dirname, f"models/downloaded")
+
+  try:
+    rmtree(MODEL_DOWNLOAD_PATH)
+  except:
+    pass
+
+  os.makedirs(MODEL_DOWNLOAD_PATH)
+
   print(f"Installing from {MODEL_JSON} feel free to edit this file to point to another JSON.")
+
   for model in data:
     print(f"Downloading {model['from_name']} -> {model['to_name']}")
-    MODEL_LINK = model['links'][0]
-    MODEL_DOWNLOAD_PATH = os.path.join(dirname, f"models/downloaded/")
-    with open(f"{MODEL_DOWNLOAD_PATH}/{MODEL_LINK.split('/')[-1]}", "wb") as f:
-      f.write(urllib.request.urlopen(MODEL_LINK).read())
+
+    MODEL_NAME = f"{model['from_code']}-{model['to_code'].upper()}.argosmodel"
+
+    with open(f"{MODEL_DOWNLOAD_PATH}/{MODEL_NAME}", "wb") as f:
+      f.write(urllib.request.urlopen(model['links'][0]).read())
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("models")
