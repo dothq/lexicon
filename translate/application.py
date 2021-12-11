@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_file
 
 import sqlite3
 from argostranslate import package, translate
@@ -100,6 +100,15 @@ def server_error(e):
 @app.errorhandler(500)
 def server_error(e):
     return throw_error(500, "Internal Server Error")
+
+@app.route("/models/download/<name>")
+def download_model(name):
+    try:
+        return send_file(
+            f"../models/{name}.argosmodel", attachment_filename=f"{name}.argosmodel"
+        )
+    except Exception as e:
+        return throw_error(404, str(e))
 
 @app.route("/")
 def index():
