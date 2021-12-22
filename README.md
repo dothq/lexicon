@@ -31,10 +31,10 @@ git clone https://github.com/dothq/lexicon.git
 cd lexicon/
 
 # Build Dockerfile
-sudo docker build -t lexicon .
+sudo docker build -t translate .
 ```
 
-Run the container with `sudo docker run -d -p 3000:3000 lexicon`
+Run the container with `sudo docker run -d -p 3000:3000 translate`
 
 The default authorization key is `universal`
 
