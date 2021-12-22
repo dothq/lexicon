@@ -25,4 +25,4 @@ jobs:
             uses: docker/build-push-action@v2
             with:
               push: true
-              tags: dothq/lexicon:latest
+              tags: dothq/translate:latest
