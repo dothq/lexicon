@@ -1,4 +1,4 @@
-## Dot Translate tools
+## Dot Lexicon tools
 
 ---
 

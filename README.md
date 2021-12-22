@@ -1,4 +1,4 @@
-# Dot Translate
+# Dot Lexicon
 🌐 A microservice for quick and local translation using A.I.
 
 ---
@@ -8,7 +8,7 @@ This service starts a local webserver used for neural machine translation.
 
 ## 🚀 Features
 
-|  | Dot Translate |
+|  | Dot Lexicon |
 | - | ------------ |
 | 🔒 | **No tracking or telemetry** data is collected from you |
 | 🆓 | **Always free** |
@@ -27,14 +27,14 @@ For inference, all models are ran on the CPU. Every model utilized in this servi
 
 ```bash
 # Clone the repository:
-git clone https://github.com/dothq/translate.git
-cd translate/
+git clone https://github.com/dothq/lexicon.git
+cd lexicon/
 
 # Build Dockerfile
-sudo docker build -t translate .
+sudo docker build -t lexicon .
 ```
 
-Run the container with `sudo docker run -d -p 3000:3000 translate`
+Run the container with `sudo docker run -d -p 3000:3000 lexicon`
 
 The default authorization key is `universal`
 
@@ -44,7 +44,7 @@ Install required dependencies:
 ```bash
 # Install requirements
 pip3 install -r requirements.txt
-cd translate/
+cd lexicon/
 
 # Download all the available models:
 python3 setup.py
@@ -60,7 +60,7 @@ Header: `Authorization: Bearer TOKEN` (default key `universal`)
 {
   "from": "en",
   "to": "es",
-  "input": "This is a test translation using Dot Translate!"
+  "input": "This is a test translation using Dot Lexicon!"
 }
 ```
 Response will be in JSON.
@@ -74,11 +74,11 @@ We accept all positive contributions that affects this repository and service as
 | Language | Source -> Target | Target -> Source |
 | :---: | :---: | :---: |
 | 🇳🇱 | [nl -> en](https://cdn.discordapp.com/attachments/842801645611384872/912031467327074374/dutch_en.argosmodel) | [en -> nl](https://cdn.discordapp.com/attachments/842801645611384872/912031363639685130/en_nl.argosmodel) |
-| 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | [en -> cy](https://github.com/dothq/translate/releases/download/November-2021/en_cy.argosmodel) | [cy -> en](https://github.com/dothq/translate/releases/download/November-2021/cy_en.argosmodel) |
+| 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | [en -> cy](https://github.com/dothq/lexicon/releases/download/November-2021/en_cy.argosmodel) | [cy -> en](https://github.com/dothq/lexicon/releases/download/November-2021/cy_en.argosmodel) |
 
 ## ❤️ Acknowledgements
 
 [Argos Translate](https://github.com/argosopentech/argos-translate), which is built on [OpenNMT](https://opennmt.net/), is widely used in this repository for translation.
 
 ## 📜 Licenses
-**Dot Translate** is licensed under the [MIT](https://spdx.org/licenses/MIT.html) license.
+**Dot Lexicon** is licensed under the [MIT](https://spdx.org/licenses/MIT.html) license.
