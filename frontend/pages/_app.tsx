@@ -1,10 +1,20 @@
 import { css, Global } from "@emotion/react";
 import React from "react";
 import emotionReset from "emotion-reset";
+import Head from "next/head";
 
 const App = ({ Component, pageProps }) => {
     return (
         <>
+            <Head>
+                <title>Dot Translate</title>
+                <meta name="description" content={"Translate text between languages with high-accuracy using artificial intelligence."}></meta>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+                <meta property="og:title" content={"Dot Translate"}></meta>
+                <meta property="og:description" content={"Translate text between languages with high-accuracy using artificial intelligence."}></meta>
+                <meta name="twitter:title" content={"Dot Translate"}></meta>
+                <meta name="twitter:description" content={"Translate text between languages with high-accuracy using artificial intelligence."}></meta>
+            </Head>
             <Global
                 styles={css`
                     ${emotionReset}
@@ -16,6 +26,11 @@ const App = ({ Component, pageProps }) => {
                         font-display: block;
                         src: url(/static/fonts/Inter.var.woff2) format("woff2");
                         font-named-instance: "Regular";
+                    }
+
+                    ::selection {
+                        background-color: #1662D3;
+                        color: white;
                     }
 
                     html,
