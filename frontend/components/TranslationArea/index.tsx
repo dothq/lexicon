@@ -129,7 +129,7 @@ export const TranslationArea = React.forwardRef(({ from, to, result, setResult }
                     placeholder={"Translation"}
                     style={{ padding: 0 }}
                 /> 
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div style={{ display: "flex", gap: "0.6rem" }}>
                     <IconButton 
                         icon={playing ? "stop.svg" : "speak.svg"} 
                         onClick={() => onSynthesizeClick()}
