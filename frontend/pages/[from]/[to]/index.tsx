@@ -25,19 +25,19 @@ const Home = ({ from, to }: { from: string, to: string }) => {
             <Header />
             <Content>
                 <div style={{ display: "flex", gap: "0.8rem" }}>
-                    <Link href={"/"}>
+                    {/* <Link href={"/"}>
                         <Button variant={"primary"}>
                             <Icon icon={"translate.svg"} />
                             Text
                         </Button>
-                    </Link>
+                    </Link> */}
 
-                    <Link href={"/documents"}>
+                    {/* <Link href={"/documents"}>
                         <Button variant={"secondary"}>
                             <Icon icon={"document.svg"} />
                             Documents
                         </Button>
-                    </Link>
+                    </Link> */}
                 </div>
 
                 <Card>
