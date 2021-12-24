@@ -17,7 +17,7 @@ export const flags = [
     {
       "code": "ar",
       "name": "Arabic",
-      "flag": "🏴‍☠️"
+      "flag": "🇸🇦"
     },
     {
       "code": "hy",
