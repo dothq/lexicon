@@ -66,6 +66,14 @@ const Home = ({ from, to }: { from: string, to: string }) => {
                         />
                     </CardSplitter>
                 </Card>
+
+                <a 
+                    style={{ color: "#1662D3", fontSize: "0.9rem", fontWeight: 500 }} 
+                    href={"https://github.com/dothq/lexicon/blob/main/docs/why-does-this-language-have-the-wrong-flag.md"}
+                    target={"_blank"}
+                >
+                    Why does this language have the wrong flag?
+                </a>
             </Content>
         </>
     )
